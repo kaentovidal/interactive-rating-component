@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --mediumGray: hsl(216, 12%, 54%);
+    --lightGray: hsl(217, 12%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --orange: hsl(25, 97%, 53%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: var(--veryDarkBlue);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+input {
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+main { 
+    background-image: linear-gradient(var(--darkBlue), hsl(214, 29%, 15%));
+    border-radius: 5%;
+}
+/* styles for the form rate */
+.none{
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 2rem;
+    height: 345px;
+}
+form > picture {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+form > picture > img {
+    padding: 30%;
+}
+form h2 {
+    padding: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+}
+
+p{
+    color: var(--lightGray);
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0;
+}
+input[type="radio"] {
+    display: none;
+}
+form > div > label {
+    background-color: rgba(119, 119, 119, 0.445);
+    color: var(--lightGray);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="radio"]:checked + label{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.submit{
+    border-radius: 2rem 2rem 2rem 2rem;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.submit:active{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+/* styles for the thanks card */
+
+.noneCard {
+    display: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 2rem;
+}
+.card img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.card div {
+    display: flex;
+    padding: 1rem 0;
+}
+.card div p {
+    color: var(--orange);
+    margin: auto ;
+    background-color: #38373746;
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: .5rem 1rem;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.8rem;
+}
+.card p{
+    text-align: center;
+}
